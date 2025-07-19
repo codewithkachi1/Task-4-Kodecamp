@@ -23,22 +23,3 @@ def main():
     save_resume(resume_data, "resume.txt", format="txt")
 
 main()
-
-
-# README.md
-
-# # Resume Generator
-
-# This project generates a resume from structured_data stored in JSON format.
-
-# ### Features
-# * Loads resume data from `resume.json`
-# * Generates resume in Markdown and plain text formats
-# * Saves generated resumes to `resume.md` and `resume.txt`
-
-# ### Usage
-# 1. Update `resume.json` with your personal data
-# 2. Run `python resume.py` to generate resumes
-
-
-# You can upload these files to GitHub and use the resume generator to create your own resume. Make sure to update the resume.json file with your own data.
