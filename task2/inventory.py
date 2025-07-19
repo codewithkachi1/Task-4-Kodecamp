@@ -51,12 +51,3 @@ class Inventory:
             print("Price updated successfully")
         else:
             print("Book not found")
-
-# Git Commands:
-
-# 1. Create a new branch for the search feature: git checkout -b feature-search
-# 2. Implement the search feature in the inventory.py file
-# 3. Commit the changes: git add . and `git commit -m "Added search feature, searching by title")
-# 4. Switch back to the main branch: git checkout main
-# 5. Merge the feature branch: git merge feature-search
-# 6. Push the changes to the remote repository: git push origin main
