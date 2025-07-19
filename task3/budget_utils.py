@@ -15,3 +15,12 @@ def save_transactions(transactions, filename):
     with open(filename, "w") as file:
         json.dump(data, file, indent=4)
 
+def group_by_category(transactions):
+    categories = {}
+    for transaction in transactions:
+        if transaction.category in categories:
+            categories[transaction.category] += transaction.amount
+        else:
+            categories[transaction.category] = transaction.amount
+    return categories
+
