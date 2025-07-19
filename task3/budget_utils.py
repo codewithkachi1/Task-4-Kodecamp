@@ -10,3 +10,8 @@ def load_transactions(filename):
     else:
         return []
 
+def save_transactions(transactions, filename):
+    data = [transaction.to_dict() for transaction in transactions]
+    with open(filename, "w") as file:
+        json.dump(data, file, indent=4)
+
