@@ -1,0 +1,29 @@
+{
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": "123-456-7890",
+  "summary": "Highly motivated software engineer with 5 years of experience.",
+  "education": [
+      {
+          "degree": "Bachelor of Science in Computer Science",
+          "university": "Example University",
+          "graduation_date": "2020"
+      }
+  ],
+  "work_experience": [
+      {
+          "job_title": "Software Engineer",
+          "company": "Example Company",
+          "employment_dates": "2020-2022",
+          "responsibilities": [
+              "Developed multiple projects using Python and JavaScript",
+              "Collaborated with cross-functional teams to deliver high-quality products"
+          ]
+      }
+  ],
+  "skills": [
+      "Python",
+      "JavaScript",
+      "HTML/CSS"
+  ]
+}
