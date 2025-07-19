@@ -28,7 +28,11 @@ class Inventory:
         for book in self.books:
             print(f"Title: {book.title}, Author: {book.author}, Price: {book.price}, Stock: {book.stock}")
 
-    
+    def search_book(self, title):
+        for book in self.books:
+            if book.title.lower() == title.lower():
+                return book
+        return None
 
     def update_stock(self, title, stock):
         book = self.search_book(title)
@@ -46,4 +50,5 @@ class Inventory:
             self.save_books()
             print("Price updated successfully")
         else:
+            print("Book not found")
             print("Book not found")
