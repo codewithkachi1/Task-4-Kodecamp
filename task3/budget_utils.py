@@ -24,3 +24,7 @@ def group_by_category(transactions):
             categories[transaction.category] = transaction.amount
     return categories
 
+def calculate_totals(transactions):
+    total_income = sum(transaction.amount for transaction in transactions if transaction.amount > 0)
+    total_expenses = sum(abs(transaction.amount) for transaction in transactions if transaction.amount < 0)
+    return total_income, total_expenses
